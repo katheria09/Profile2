@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/ScrollView01"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:scrollbars="none" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:text="Edit Profile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:textColor="@color/green"
+                android:id="@+id/textView"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textStyle="normal|bold"
+                android:fontFamily="sans-serif" />
+
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/name"
+                android:id="@+id/imageView"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="16dp"
+                android:layout_alignTop="@+id/i1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/i1"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="36dp"
+                android:weightSum="1"
+                android:layout_below="@+id/textView"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView"
+                android:layout_toEndOf="@+id/imageView">
+
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:id="@+id/editText1"
+                    android:hint="Name"
+                    android:inputType="textPersonName"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-condensed" />
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/mobile"
+                android:id="@+id/imageView2"
+                android:layout_above="@+id/i3"
+                android:layout_alignTop="@+id/i2"
+                android:layout_alignLeft="@+id/imageView3"
+                android:layout_alignStart="@+id/imageView3" />
+
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/i3"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/i2"
+                android:layout_toRightOf="@+id/imageView3"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:hint="Email"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText3"
+                    android:inputType="textEmailAddress"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-condensed" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/i4"
+                android:layout_width="wrap_content"
+                android:layout_height="54dp"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/i3"
+                android:layout_toRightOf="@+id/imageView4"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true">
+
+                <EditText
+                    android:hint="DOB (DD/MM/YYYY)"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText4"
+                    android:inputType="date"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-condensed"
+                    android:layout_below="@+id/i4"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="11dp" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                app:srcCompat="@drawable/social_email"
+                android:layout_alignTop="@+id/i3"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="10dp"
+                android:layout_above="@id/i4"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView3" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="10dp"
+                app:srcCompat="@drawable/dob"
+                android:layout_alignTop="@+id/i4"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="16dp"
+                android:layout_alignParentStart="true"
+                android:id="@+id/imageView4" />
+
+            <Button
+                android:text="Save Changes"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@color/green"
+                android:textColor="@color/white"
+                android:id="@+id/button"
+                android:textSize="16sp"
+                android:fontFamily="sans-serif-condensed"
+                android:layout_below="@+id/i4"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/i2"
+                android:layout_width="wrap_content"
+                android:paddingLeft="5dp"
+                android:layout_height="54dp"
+                android:layout_marginTop="12dp"
+                android:layout_below="@+id/i1"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@+id/imageView2"
+                android:layout_toEndOf="@+id/imageView2">
+
+                <EditText
+                    android:hint="Mobile No"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/editText2"
+                    android:inputType="number"
+                    android:textAllCaps="false"
+                    android:fontFamily="sans-serif-condensed" />
+
+            </android.support.design.widget.TextInputLayout>
+
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
